@@ -1,0 +1,39 @@
+.container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  background-color: #fff;
+  border: 2px solid #d11f69;
+  color: #d11f69;
+  border-radius: 15px;
+  padding: 0 20px;
+  transform: translateY(150vh);
+  opacity: 0;
+  .image {
+    width: 50px;
+    height: 50px;
+  }
+
+  &.show {
+    opacity: 1;
+    animation: fall 0.5s forwards;
+    transform: translateY(0);
+    bottom: 50px;
+  }
+}
+
+
+@keyframes fall {
+  0% {
+    transform: translateY(150vh);
+  }
+  75% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  
+}
