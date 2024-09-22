@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  .title {
+    display: flex;
+    font-size: 38px;
+    font-weight: 300;
+    background: -webkit-linear-gradient(315deg, #3178c6 45%, #f0dc4e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .text {
+    
+    font-weight: 300;
+  }
+
+  .buttons {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    .or {
+      color: #3178c6;
+      font-weight: 700;
+    }
+  }
+}
